@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Login</title>
+</head>
+
+<body class="login">
+    <!-- <img class="wave" src="img/wave.png"> -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ff3d00" fill-opacity="1"
+            d="M0,128L80,154.7C160,181,320,235,480,240C640,245,800,203,960,197.3C1120,192,1280,224,1360,240L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+        </path>
+    </svg>
+    <div class="container">
+        <div class="img">
+            <img src="image/bg.svg">
+        </div>
+        <div class="login-content">
+            <form action="index.html">
+                <img src="image/avatar.svg">
+                <h2 class="title">Welcome</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Username</h5>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Password</h5>
+                        <input type="password" class="input">
+                    </div>
+                </div>
+                <a href="#">Forgot Password?</a>
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+    <script>
+        const inputs = document.querySelectorAll(".input");
+
+
+        function addcl() {
+            let parent = this.parentNode.parentNode;
+            parent.classList.add("focus");
+        }
+
+        function remcl() {
+            let parent = this.parentNode.parentNode;
+            if (this.value == "") {
+                parent.classList.remove("focus");
+            }
+        }
+
+
+        inputs.forEach(input => {
+            input.addEventListener("focus", addcl);
+            input.addEventListener("blur", remcl);
+        });
+    </script>
+
+</body>
+
+</html>

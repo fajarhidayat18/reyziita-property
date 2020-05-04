@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width:992px) {
+    footer.story .parallax-container {
+        height: 550px;
+    }
+}
+
+@media (max-width:600.98px) {
+    footer.story .parallax-container {
+        height: 1270px;
+    }
+}
+
+// variables
+@import './components/variabel';
+
+// halaman index
+@import './components/index';
+
+// halaman detail
+@import './components/detail';
+
+// modals
+@import './components/modal';
+
+// login
+@import './components/login';
