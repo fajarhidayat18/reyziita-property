@@ -1,283 +1,380 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-      crossorigin="anonymous"
-    />
-    <title>Reyziita Property</title>
 
-    <style>
-      .carousel-inner {
-        height: 504px;
-        overflow: hidden;
-      }
-      img.img-fluid {
-        height: 700px;
-      }
-    </style>
-  </head>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <title>Reyziita Property</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="indigo darken-4">
       <div class="container">
-        <a class="navbar-brand p-0">
-          <img src="reyzita.png" alt="" srcset="" height="50rem" />
-        </a>
-
-        <button
-          class="navbar-toggler"
-          data-target="#my-nav"
-          data-toggle="collapse"
-          aria-controls="my-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div id="my-nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Beranda
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Tentang Kami
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Agent
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">
-                masuk
-              </a>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo left"><img class="responsive-img" src="reyzita.jpg"></a>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#">Agent</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="login"><a href="login.html" class="btn">masuk</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header>
-      <div id="Slider" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li
-            class="active"
-            data-target="#Slider"
-            data-slide-to="0"
-            aria-current="location"
-          ></li>
-          <li data-target="#Slider" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block w-100 img-fluid"
-              id="frame"
-              src="image/hero1.jpg"
-              alt="coba"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <div class="detail bg-primary">alkk;n</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 img-fluid"
-              id="frame"
-              src="image/hero2.jpg"
-              alt="coba"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>alsknd</h5>
-              <p>alknsd</p>
-            </div>
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#Slider"
-          data-slide="prev"
-          role="button"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#Slider"
-          data-slide="next"
-          role="button"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </header>
+    <ul class="sidenav" id="nav-mobile">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="#">Agent</a></li>
+      <li><a href="#">About Us</a></li>
+      <li class="login"><a href="login.html" class="btn">masuk</a>
+      </li>
 
-    <section class="search my-5">
-      <div class="container">
-        <div class="card">
-          <h5 class="card-header px-5">Cari Properti</h5>
-          <div class="card-body px-5">
-            <div class="form">
-              <div class="inputSearch row">
-                <div class="col-8">
-                  <div class="row">
-                    <div class="col-6">
-                      Lokasi
-                      <div class="input-group mb-3 w-100">
-                        <select class="form-select" id="inputGroupSelect02">
-                          <option selected>Choose...</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      Tipe
-                      <div class="input-group mb-3 w-100">
-                        <select class="form-select" id="inputGroupSelect02">
-                          <option selected>Choose...</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      Harga
-                      <div class="input-group mb-3 w-100">
-                        <select class="form-select" id="inputGroupSelect02">
-                          <option selected>Choose...</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      Kamar
-                      <div class="input-group mb-3 w-100">
-                        <select class="form-select" id="inputGroupSelect02">
-                          <option selected>Choose...</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="col-2 justify-content-center mx-auto d-flex align-self-center"
-                >
-                  <a hxref="#" class="btn btn-primary px-5">Cari</a>
-                </div>
-              </div>
+    </ul>
+
+  </header>
+
+  <!-- hero -->
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="image/hero1.jpg"> <!-- random image -->
+      </li>
+      <li>
+        <img src="image/hero2.jpg"> <!-- random image -->
+      </li>
+      <li>
+        <img src="image/hero3.jpg"> <!-- random image -->
+      </li>
+      <li>
+        <img src="image/hero4.jpg"> <!-- random image -->
+      </li>
+    </ul>
+  </div>
+
+  <!-- pencarian -->
+  <div class="search container center">
+    <div class="card">
+      <form action="">
+        <div class="row">
+          <div class="col m3 s12">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Lokasi</option>
+                <option value="1">pontinak Utara</option>
+                <option value="2">pontinak Selatan</option>
+                <option value="3">pontinak Barat</option>
+                <option value="3">pontinak Timur</option>
+              </select>
             </div>
+          </div>
+          <div class="col m3 s12">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Type</option>
+                <option value="1">Type A</option>
+                <option value="2">Type B</option>
+                <option value="3">Type C</option>
+                <option value="3">Type D</option>
+              </select>
+            </div>
+          </div>
+          <div class="col m3 s12">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Kamar</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+              </select>
+            </div>
+          </div>
+          <div class="col m3 s12">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Harga</option>
+                <option value="1">0 - 25jt</option>
+                <option value="2">25jt - 50jt</option>
+                <option value="3">50jt - 75jt</option>
+                <option value="3">75jt - 100jt</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn">Cari</div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- nama -->
+  <section class="name center">
+    <h2 class="blue-text text-darken-3">Reyziita Property</h2>
+    <p>Selamat Datang di website resmi CV. Reyziita Property. <br>Kami siap melayani kebutuhan property anda dengan
+      profesional dan kredibel</p>
+  </section>
+
+  <!-- property -->
+  <section class="property">
+    <div class="container">
+      <h4 class="center">Latest Property</h4>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card">
+            <figure>
+              <!-- Modal Trigger -->
+              <a class="waves-effect waves-light modal-trigger" href="#modal1">
+                <img class="responsive-img" src="image/hero3.jpg">
+              </a>
+              <figcaption class="center">Rp. 12.000.000,-</figcaption>
+            </figure>
+            <h6 class="name center">nama Property</h6>
+            <span class="locations" style="margin-left: 0.5em;"><i class="material-icons">location_on</i>Rumah Jln siam
+              No. 32</span>
+            <p>Deskripsi rumah letakkan disini lorem ipsum deskripsi rumah</p>
+            <a class="more" href="#">[More Detail]</a>
+            <div class="clearfix"></div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="market my-5">
-      <div class="container">
-        <div class="d-flex flex-wrap justify-content-between">
-          <div class="w-25 m-1">
-            <div class="card">
-              <div class="w-100 d-flex justify-content-end">
-                <div class="btn-primary position-absolute ml-auto p-2 mr-1">
-                  Rp.25.000.000,0-
-                </div>
-              </div>
-              <img class="card-img-top" src="image/hero2.jpg" alt="Figure" />
-              <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">
-                  Rumah Minimalis
-                </h5>
-                <p class="card-text d-flex justify-content-center">
-                  Jl. Tanray 2 komp.A
-                </p>
-                <a
-                  class="btn btn-primary d-flex justify-content-center btn-sm px-2"
-                  href="detail.html"
-                  >Lihat Selengkapnya</a
-                >
-              </div>
-              <div class="card-img-bottom">
-                <div class="d-flex flex-row justify-content-evenly">
-                  <div class="mx-1">
-                    100 m2
-                  </div>
-                  <div class="mx-1">
-                    100 m2
-                  </div>
-                  <div class="mx-1">
-                    100 m2
-                  </div>
-                </div>
-              </div>
+      <div id="modal1" class="modal modal-ms">
+        <div class="modal-header center">
+          <h4>Nama Property</h4>
+        </div>
+        <div class="modal-content">
+          <div class="row">
+            <div class="col s6">
+              <figure>
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light modal-trigger" href="#modal1">
+                  <img class="responsive-img left" src="image/hero3.jpg">
+                </a>
+                <!-- <figcaption>sales</figcaption> -->
+              </figure>
+            </div>
+            <div class="col s6">
+              <h6>Rp.12.000.000,- <span>nego</span></h6>
+              <p>Deskripsi properti</p>
             </div>
           </div>
+          <div class="feature-property">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Layer_1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 24 24"
+                enable-background="new 0 0 24 24" xml:space="preserve">
+                <path class="path"
+                  d="M14 7.001H2.999C1.342 7 0 8.3 0 10v11c0 1.7 1.3 3 3 3H14c1.656 0 3-1.342 3-3V10 C17 8.3 15.7 7 14 7.001z M14.998 21c0 0.551-0.447 1-0.998 1.002H2.999C2.448 22 2 21.6 2 21V10 c0.001-0.551 0.449-0.999 1-0.999H14c0.551 0 1 0.4 1 0.999V21z">
+                </path>
+                <path class="path"
+                  d="M14.266 0.293c-0.395-0.391-1.034-0.391-1.429 0c-0.395 0.39-0.395 1 0 1.415L13.132 2H3.869l0.295-0.292 c0.395-0.391 0.395-1.025 0-1.415c-0.394-0.391-1.034-0.391-1.428 0L0 3l2.736 2.707c0.394 0.4 1 0.4 1.4 0 c0.395-0.391 0.395-1.023 0-1.414L3.869 4.001h9.263l-0.295 0.292c-0.395 0.392-0.395 1 0 1.414s1.034 0.4 1.4 0L17 3 L14.266 0.293z">
+                </path>
+                <path class="path"
+                  d="M18.293 9.734c-0.391 0.395-0.391 1 0 1.429s1.023 0.4 1.4 0L20 10.868v9.263l-0.292-0.295 c-0.392-0.395-1.024-0.395-1.415 0s-0.391 1 0 1.428L21 24l2.707-2.736c0.391-0.394 0.391-1.033 0-1.428s-1.023-0.395-1.414 0 l-0.292 0.295v-9.263l0.292 0.295c0.392 0.4 1 0.4 1.4 0s0.391-1.034 0-1.429L21 7L18.293 9.734z">
+                </path>
+              </svg>
+              luas&nbsp;</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Layer_1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 24 24"
+                enable-background="new 0 0 24 24" xml:space="preserve">
+                <circle class="circle" cx="5" cy="8.3" r="2.2"></circle>
+                <path class="path"
+                  d="M0 22.999C0 23.6 0.4 24 1 24S2 23.6 2 22.999V18H2h20h0.001v4.999c0 0.6 0.4 1 1 1 C23.552 24 24 23.6 24 22.999V10C24 9.4 23.6 9 23 9C22.447 9 22 9.4 22 10v1H22h-0.999V10.5 C20.999 8 20 6 17.5 6H11C9.769 6.1 8.2 6.3 8 8v3H2H2V9C2 8.4 1.6 8 1 8S0 8.4 0 9V22.999z M10.021 8.2 C10.19 8.1 10.6 8 11 8h5.5c1.382 0 2.496-0.214 2.5 2.501v0.499h-9L10.021 8.174z M22 16H2v-2.999h20V16z">
+                </path>
+              </svg>
+              +&nbsp;Bedrooms</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Layer_1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 24 24"
+                enable-background="new 0 0 24 24" xml:space="preserve">
+                <path class="path"
+                  d="M23.001 12h-1.513C21.805 11.6 22 11.1 22 10.5C22 9.1 20.9 8 19.5 8S17 9.1 17 10.5 c0 0.6 0.2 1.1 0.5 1.5H2.999c0-0.001 0-0.002 0-0.002V2.983V2.98c0.084-0.169-0.083-0.979 1-0.981h0.006 C4.008 2 4.3 2 4.5 2.104L4.292 2.292c-0.39 0.392-0.39 1 0 1.415c0.391 0.4 1 0.4 1.4 0l2-1.999 c0.39-0.391 0.39-1.025 0-1.415c-0.391-0.391-1.023-0.391-1.415 0L5.866 0.72C5.775 0.6 5.7 0.5 5.5 0.4 C4.776 0 4.1 0 4 0H3.984v0.001C1.195 0 1 2.7 1 2.98v0.019v0.032v8.967c0 0 0 0 0 0.002H0.999 C0.447 12 0 12.4 0 12.999S0.447 14 1 14H1v2.001c0.001 2.6 1.7 4.8 4 5.649V23c0 0.6 0.4 1 1 1s1-0.447 1-1v-1h10v1 c0 0.6 0.4 1 1 1s1-0.447 1-1v-1.102c2.745-0.533 3.996-3.222 4-5.897V14h0.001C23.554 14 24 13.6 24 13 S23.554 12 23 12z M21.001 16.001c-0.091 2.539-0.927 3.97-3.001 3.997H7c-2.208-0.004-3.996-1.79-4-3.997V14h15.173 c-0.379 0.484-0.813 0.934-1.174 1.003c-0.54 0.104-0.999 0.446-0.999 1c0 0.6 0.4 1 1 1 c2.159-0.188 3.188-2.006 3.639-2.999h0.363V16.001z">
+                </path>
+                <rect class="rect" x="6.6" y="4.1" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 15.6319 3.2336)"
+                  width="1" height="1.4"></rect>
+                <rect class="rect" x="9.4" y="2.4" transform="matrix(0.7066 0.7076 -0.7076 0.7066 4.9969 -6.342)"
+                  width="1.4" height="1"></rect>
+                <rect class="rect" x="9.4" y="6.4" transform="matrix(0.7071 0.7071 -0.7071 0.7071 7.8179 -5.167)"
+                  width="1.4" height="1"></rect>
+                <rect class="rect" x="12.4" y="4.4" transform="matrix(0.7069 0.7073 -0.7073 0.7069 7.2858 -7.8754)"
+                  width="1.4" height="1"></rect>
+                <rect class="rect" x="13.4" y="7.4" transform="matrix(-0.7064 -0.7078 0.7078 -0.7064 18.5823 23.4137)"
+                  width="1.4" height="1"></rect>
+              </svg>
+              +&nbsp;Bathrooms</span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Layer_1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 24 24"
+                enable-background="new 0 0 24 24" xml:space="preserve">
+                <path class="path"
+                  d="M23.958 0.885c-0.175-0.64-0.835-1.016-1.475-0.842l-11 3.001c-0.64 0.173-1.016 0.833-0.842 1.5 c0.175 0.6 0.8 1 1.5 0.842L16 4.299V6.2h-0.001H13c-2.867 0-4.892 1.792-5.664 2.891L5.93 11.2H5.024 c-0.588-0.029-2.517-0.02-3.851 1.221C0.405 13.1 0 14.1 0 15.201V18.2v2H2h2.02C4.126 22.3 5.9 24 8 24 c2.136 0 3.873-1.688 3.979-3.801H16V24h2V3.754l5.116-1.396C23.756 2.2 24.1 1.5 24 0.885z M8 22 c-1.104 0-2-0.896-2-2.001s0.896-2 2-2S10 18.9 10 20S9.105 22 8 22.001z M11.553 18.2C10.891 16.9 9.6 16 8 16 c-1.556 0-2.892 0.901-3.553 2.201H2v-2.999c0-0.599 0.218-1.019 0.537-1.315C3.398 13.1 5 13.2 5 13.2h2L9 10.2 c0 0 1.407-1.999 4-1.999h2.999H16v10H11.553z">
+                </path>
+              </svg>
+              +&nbsp;Garages</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="btn waves-effect deep-orange modal-close">Close</a>
+          <a href="detail.html" class="btn waves-effect indigo darken-4">Detail</a>
         </div>
       </div>
-    </section>
 
-    <footer class="btn-primary">
-      <div class="container py-4">
-        <div class="d-flex">
-          <a class="navbar-brand">
-            <img src="reyzita.png" alt="" srcset="" height="70rem" />
-          </a>
-          <ul class="d-flex justify-content-end ml-auto align-items-center">
-            <li class="">
-              <a class="" href="#">
-                Beranda
-              </a>
+      <ul class="pagination center">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect number"><a href="#!">2</a></li>
+        <li class="waves-effect number"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- story -->
+  <section class="story center white-text">
+    <div class="parallax-container">
+      <div class="parallax"><img src="image/hero2.jpg"></div>
+      <div class="container valign">
+        <h3>Reyziita Property</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nemo ut itaque. Autem nam
+          consequatur
+          obcaecati magni laudantium. Quisquam inventore quod porro nostrum cum dolorum enim
+          reprehenderit!
+          Sequi,
+          quis aliquid.</p>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- agent -->
+  <section class="agent grey lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col m7 s12">
+          <h4>Fandy Fandy</h4>
+          <blockquote style="border-left: 4px solid #1a237e;">Agent</blockquote>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, nisi odit! Quibusdam, inventore
+            ullam
+            distinctio nihil sit error deleniti harum tenetur nostrum, temporibus iusto eum natus doloremque
+            doloribus! Mollitia, distinctio!</p>
+          <span class="valign-wrapper" style="margin-top:10px;"><i class="material-icons">phone_in_talk</i>+62
+            852 4587
+            1923</span>
+          <span class="valign-wrapper"><i class="material-icons">mail_outline</i>fandyfandy@gmail.com</span><br>
+        </div>
+        <div class="col m5 12">
+          <img class="responsive-img" src="klain.jpeg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="white-text">
+    <div class="parallax-container">
+      <div class="parallax"><img src="image/hero1.jpg"></div>
+      <div class="row">
+        <div class="col m4 s12 center">
+          <h5 class="center">About Us</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae atque itaque quaerat tempore
+            dolorum? Voluptate accusamus molestias id pariatur illo eum laborum consectetur voluptatum.
+            Commodi explicabo vel provident, enim dolor possimus neque, quae quia ipsam cum alias fugiat
+            deserunt quas.</p>
+        </div>
+        <div class="col m4 s12">
+          <h5 class="center">Hours</h5>
+
+          <ul class="collection black">
+            <li class="collection-item transparent">
+              <span class="">Monday - Friday</span>
+              <span class="right">09 AM - 19 PM</span>
             </li>
-            <li class="">
-              <a class="" href="#">
-                Tentang Kami
-              </a>
+            <li class="collection-item transparent">
+              <span class="">Saturday</span>
+              <span class="right">09 AM - 14 PM</span>
             </li>
-            <li class="">
-              <a class="" href="#">
-                Agent
-              </a>
-            </li>
-            <li class="">
-              <a class="" href="login.html">
-                masuk
-              </a>
+            <li class="collection-item transparent">
+              <span class="">Sunday</span>
+              <span class="right">Closed</span>
             </li>
           </ul>
+          <span class="valign-wrapper"><i class="material-icons">phone_in_talk</i>+62 852 4587 1923</span>
+          <span class="valign-wrapper"><i class="material-icons">mail_outline</i>fandyfandy@gmail.com</span>
+          <span class="valign-wrapper"><i class="material-icons">location_on</i>Rumah Jl.siam no.32</span>
         </div>
-        <div class="d-flex justify-content-center">
-          © 2020 Copyright Reyziita Property
+        <div class="col m4 s12">
+          <h5 class="center" style="margin-bottom: 0;">sertivicate</h5>
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="image/sertifikat1.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="image/sertifikat2.jpg"></a>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center">
+        © 2020 Copyright Reyziita Property
+      </div>
+    </div>
+  </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Compiled and minified JavaScript -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Inisialisasi -->
+  <script>
+    // $(document).ready(function () {
+    //     $('.sidenav').sidenav();
+    // });
+
+    // $(document).ready(function () {
+    //     $('select').material_select();
+    // });
+
+    $(document).ready(function () {
+      $('.modal').modal();
+    });
+
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
+    let nav = document.querySelector('.sidenav');
+    M.Sidenav.init(nav);
+
+    let hero = document.querySelector('.slider');
+    M.Slider.init(hero, {
+      indicators: false,
+      height: 545,
+      duration: 800,
+      inteval: 1000
+    });
+    let galery = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(galery);
+
+
+    let cari = document.querySelectorAll('select');
+    M.FormSelect.init(cari);
+
+    let parallax = document.querySelector('.parallax');
+    M.Parallax.init(parallax);
+  </script>
+</body>
+
 </html>
