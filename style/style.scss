@@ -4,29 +4,29 @@
     box-sizing: border-box;
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     footer.story .parallax-container {
         height: 550px;
     }
 }
 
-@media (max-width:600.98px) {
+@media (max-width: 600.98px) {
     footer.story .parallax-container {
         height: 1270px;
     }
 }
 
 // variables
-@import './components/variabel';
+@import "./components/variabel";
 
 // halaman index
-@import './components/index';
+// @import './components/index';
 
 // halaman detail
-@import './components/detail';
+@import "./components/detail";
 
 // modals
-@import './components/modal';
+// @import "./components/modal";
 
 // login
-@import './components/login';
+@import "./components/login";
