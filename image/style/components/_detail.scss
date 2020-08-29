@@ -1,0 +1,185 @@
+.detail-property {
+    .col12.desc-property {
+        padding: 0 0 24px 0;
+
+        .a-glance {
+            margin: 5px 0;
+            padding: 15px 25px;
+
+            span.price {
+                color: $orangeTheme;
+                padding: 5px;
+                font-size: 1.3rem;
+                width: 60%;
+                margin: 0;
+                font-weight: 500;
+            }
+
+            h4 {
+                margin: 10px 0;
+                padding: 0 10px;
+                font-weight: 500;
+            }
+
+            span.location {
+                color: $orangeTheme;
+                padding: 10px;
+                font-size: 1.5rem;
+                width: 100%;
+                margin: 0;
+                font-weight: 400;
+                z-index: 9;
+            }
+
+        }
+
+        .spesifikasi {
+            margin: 10px 0;
+            padding: 25px 24px;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+
+            span {
+                margin: 0 6px;
+
+            }
+        }
+
+        .description {
+            overflow: visible;
+            font-size: 0.8rem;
+            display: block;
+
+            p {
+                white-space: pre-wrap;
+                text-indent: -40px;
+                text-align: left;
+                width: 100%;
+                transform: translateX(-50px);
+            }
+        }
+
+        .feature {
+
+            .title-feature {
+                h5 {
+                    margin: 1rem 0 0 0;
+                    border-top: 0.5px solid $indigo;
+                    padding: 5px 0;
+                }
+
+                background: #cccccc;
+            }
+
+            .list-item {
+                display: block;
+                padding-top: 10px;
+                padding-inline-start: 40px;
+                background-color: #efefef;
+                border-top: 1px solid $deepOrange;
+                border-bottom: 1px solid $indigo;
+
+                li.item {
+                    background: url(ceklis.png) !important;
+                    list-style-type: disc;
+                    float: left;
+                    width: 25%;
+                    margin: 0 27px 2px 0;
+                }
+            }
+
+            .list-item::after {
+                content: "";
+                margin-bottom: 10px;
+                clear: both;
+                display: table;
+            }
+        }
+
+        .galery {
+            margin: 3em 24px 0 24px;
+
+            .row {
+                padding: 0 10px;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .col.m3 {
+                color: $indigo;
+            }
+        }
+    }
+
+}
+
+.property {
+    margin-bottom: 20px;
+
+    .card {
+        padding-bottom: 15px;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    img {
+        padding: 0;
+    }
+
+    figcaption {
+        background: white;
+        color: $orangeTheme;
+        padding: 5px;
+        font-size: 1rem;
+        width: 60%;
+        margin: 0;
+        font-weight: bold;
+        float: left;
+        position: absolute;
+        z-index: 9;
+        transform: translate(10px, -50px);
+        border-radius: 10px;
+
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+
+    span.location {
+        color: $orangeTheme;
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+        font-weight: bold;
+        z-index: 9;
+    }
+
+    a.more {
+        padding: 5px 20px;
+    }
+
+    .clearfix {
+        overflow: auto;
+    }
+
+    p {
+        color: $grayText;
+        height: 4.9rem;
+        padding: 5px 20px;
+        display: block;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 5.1rem;
+    }
+
+    ul.pagination {
+        margin-bottom: 4rem;
+    }
+
+}

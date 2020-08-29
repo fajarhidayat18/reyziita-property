@@ -1,0 +1,358 @@
+// import font
+@import url("https://fonts.googleapis.com/css2?family=B612&family=Baloo+2:wght@400;500;600;700;800&family=Montserrat:wght@400;500;700;800&display=swap");
+
+// color
+$blue: #1245aa; // Main Primary color */
+$lightBlue1: #5d88dc;
+$lightBlue2: #80a6f3;
+$darkBlue1: #02215f;
+$darkBlue2: #001846;
+
+$yellow: #ffe801; // Main Secondary color (1) */
+$lightYellow1: #fff05b;
+$lightYellow2: #fff379;
+$darkYellow1: #8e8200;
+$darkYellow2: #685f00;
+
+$orange: #ff3e01; // Main Secondary color (2) */
+$lightOrange1: #ff835b;
+$lightOrange2: #ff9979;
+$darkOrange1: #8e2200;
+$darkOrange2: #681900;
+$abu-abu: #acacac;
+
+// Font
+$font-nav: "B612", sans-serif;
+$font-tag: "Baloo 2", cursive;
+$font-text: "Montserrat", sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.font-lightblue {
+    color: $lightBlue2;
+}
+body {
+    background-color: whitesmoke;
+    font-family: $font-text;
+}
+.btn-search {
+    background-color: $orange;
+    color: white;
+}
+@media (max-width: 767px) {
+    .btn-search {
+        display: block !important;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .w-md-50 {
+        width: 45% !important;
+        margin: 0.5rem 0.2rem;
+    }
+    .btn-search {
+        padding: 1.5rem 3rem !important;
+    }
+}
+@media (min-width: 992px) {
+    .w-card {
+        width: 31% !important;
+        margin: 0.8rem;
+    }
+}
+.bg-nav {
+    background-color: $darkBlue1 !important;
+    font-family: $font-nav;
+}
+.navbar-nav .nav-link {
+    color: rgb(172, 186, 211);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #ffffff;
+}
+#login.nav-item {
+    border-radius: 50px;
+    background-color: $darkBlue1;
+    border: 1px solid $darkOrange1;
+    padding: 0 15px;
+}
+.navbar-nav li {
+    padding: 0 10px;
+    &::after {
+        content: "";
+        display: block;
+    }
+}
+
+.carousel-item {
+    background: black;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.info {
+    background-color: #02215f7a;
+    color: white;
+    display: block;
+    transform: translate(100px, 100px);
+    width: fit-content;
+    padding: 24px;
+    .wave {
+        display: block;
+        position: absolute;
+        height: 20px;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 1%, 0 100%);
+        background-color: #02215f7a;
+        left: 0;
+        bottom: 0;
+        transform: translateY(20px);
+        &::after {
+            content: "";
+            display: block;
+            background-color: $darkYellow1;
+            height: 5px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            transform: translateY(5px) rotate(-4deg);
+        }
+    }
+    .status {
+        background-color: $lightBlue2;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        font-weight: bold;
+        padding: 0.5em;
+        position: absolute;
+        top: -18px;
+        right: 10px;
+    }
+    .specific {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .specific-item {
+            margin: 1em;
+            width: 25%;
+            span {
+                width: fit-content;
+            }
+        }
+    }
+    span.price {
+        margin: 0 2em;
+        font-size: 1.25rem;
+    }
+}
+
+.search .card {
+    background-color: $blue;
+    color: white;
+}
+
+.market {
+    .btn-orange {
+        background-color: $orange;
+        color: white;
+    }
+    .tag-price {
+        background-color: $lightBlue2;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        color: white;
+        padding: 0.5em;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+    .card-bottom {
+        background-color: rgb(160, 160, 160);
+    }
+}
+
+.patner {
+    background-color: white;
+    .tag-patner {
+        background-color: black;
+        color: white;
+        padding: 0.5rem 2rem;
+        transform: translateY(-1.5rem);
+    }
+}
+
+footer {
+    background-color: $darkBlue1;
+    color: white;
+    p {
+        color: rgb(179, 179, 179);
+        padding: 0;
+        margin: 0;
+    }
+}
+
+section.detail {
+    img {
+        border-radius: 0.25rem 0.25rem 0 0;
+    }
+    .card-body {
+        padding: 0;
+    }
+
+    .tag-price {
+        background-color: rgb(196, 196, 196);
+        color: white;
+        .wave {
+            display: block;
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 50% 50%);
+            background-color: $darkBlue1;
+            width: 1rem;
+            top: 0;
+        }
+        .status {
+            background-color: $darkBlue1;
+            padding: 0.5rem;
+        }
+        .price {
+            background-color: $lightBlue1;
+            padding: 0.5rem;
+        }
+    }
+
+    .content-specific {
+        background-color: rgb(163, 163, 163);
+        border-radius: 0.25rem;
+        .download {
+            background-color: $orange;
+            color: white;
+            border-radius: 0.25rem;
+        }
+    }
+    hr {
+        height: 5px;
+        background-color: $darkBlue1;
+    }
+}
+
+.card-detail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem !important;
+}
+
+.agent-card {
+    .name-agent {
+        background-color: $orange;
+        color: white;
+        padding: 0.7rem 2rem;
+        border-radius: 0.25rem;
+        position: absolute;
+        transform: translateY(-3rem);
+    }
+
+    .call {
+        border-radius: 0.25rem;
+        margin: 4 5rem !important;
+        text-decoration: none;
+        color: white;
+        background-color: green;
+        .logo {
+            &::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 100%;
+                background-color: white;
+            }
+        }
+    }
+}
+
+.content.about-us {
+    .tag-line {
+        margin: 3em 0 7em 0;
+        font-family: $font-tag;
+        h1 {
+            font-weight: 900;
+            color: $lightBlue1;
+        }
+        p {
+            font-weight: 600;
+            color: $abu-abu;
+        }
+        img {
+            margin-top: 3em;
+        }
+    }
+    .document {
+        margin: 5rem 0;
+    }
+    .about-us-section {
+        margin: 10rem 0;
+        position: relative;
+        .wave {
+            position: absolute;
+            width: 5px;
+            height: 100%;
+            background-color: $orange;
+            right: 50%;
+            left: 48%;
+            transform: translateX(50%);
+        }
+    }
+    .member {
+        margin: 6rem 0;
+        h3 {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.jumbotron {
+    position: relative;
+    .title {
+        right: 0;
+        bottom: 0;
+        transform: translateY(-6rem);
+        font-size: 3rem;
+        position: absolute;
+        font-weight: bolder;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    .sub-title {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        font-weight: bold;
+        font-size: 2rem;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.Agent {
+    div.contact {
+        .img-place {
+            img {
+                border-radius: 1rem;
+            }
+            .name-agent {
+                // display: flex;
+                background-color: $orange;
+                color: white;
+                padding: 0.7rem 2rem;
+                border-radius: 0.25rem;
+                margin: 0 5rem;
+                transform: translateY(-3rem);
+            }
+        }
+    }
+}
